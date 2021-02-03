@@ -9,7 +9,8 @@ pip3 install selenium
 pip3 install apscheduler
 ```
 
-2. [ChromeDriver-Mac安装](https://www.cnblogs.com/lilyo/p/11959494.html)
+2. [ChromeDriver-Mac安装](https://www.cnblogs.com/lilyo/p/11959494.html)<br>[WebDriver-Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) (使用Edge请按照浏览器版本下载并放置在脚本同目录)
+
 
 ## 参数设置
 
