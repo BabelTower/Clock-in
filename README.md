@@ -11,6 +11,30 @@ pip3 install apscheduler
 
 2. [ChromeDriver-Mac安装](https://www.cnblogs.com/lilyo/p/11959494.html)<br>[WebDriver-Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) (使用Edge请按照浏览器版本下载并放置在脚本同目录)
 
+### linux配置（以centos7为例）
+
+1.安装selenium、谷歌浏览器
+```shell
+pip install selenium
+yum install google-chrome-stable_current_x86_64.rpm
+```
+安装完成之后，检查谷歌版本号
+```shell
+google-chrome -version
+```
+
+2.根据谷歌浏览器版本安装驱动器
+```shell
+wegt https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip  #请将88.0.4324.96修改为你的浏览器版本
+unzip chromedriver_linux64.zip #解压zip
+mv chromedriver /usr/bin/
+chromedriver --version #查看chromedriver版本号
+```
+
+3.linux使用crontab来执行定时任务
+```shell
+30 8 * * * python daka_linux.py
+```
 
 ## 参数设置
 
