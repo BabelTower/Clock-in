@@ -11,14 +11,15 @@ c_minute = "45"
 c_hour = "16"
 
 #网址、用户名、密码
-url = key.url
+url = 'http://mapp.zjut.edu.cn/_web/_apps/eform/onlinesurvey/onlineSurvey_m.jsp?domainId=1&topicId=17'  #学生战役网址
 username = key.username
 password = key.password
 
 def work():
 	try:
-		#打开浏览器，进入百度搜索
-		browser = webdriver.Chrome()
+		#打开浏览器
+		browser = webdriver.Chrome()  #如使用的是Edge 请注释
+		#browser = webdriver.Edge(r'驱动地址，例：D:\Download\Clock-in-master\msedgedriver.exe')
 		browser.get(url)
 		#输入python
 		browser.find_element_by_id('username').clear()
