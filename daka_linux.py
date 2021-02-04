@@ -26,7 +26,6 @@ browser.find_element_by_class_name('sl-login-btn').click()
 browser.find_element_by_class_name('l-btn-text').click()
 browser.find_element_by_link_text('提交').click()
 browser.find_element_by_class_name('l-btn-text').click()
-browser.find_element_by_class_name('layui-layer-btn0').click()
 #退出浏览器
 browser.quit()
 print('success!')
