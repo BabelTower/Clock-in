@@ -30,6 +30,10 @@ unzip chromedriver_linux64.zip #解压zip
 mv chromedriver /usr/bin/
 chromedriver --version #查看chromedriver版本号
 ```
+如需使用钉钉推送，请安装DingtalkChatbot库
+```shell
+pip install DingtalkChatbot
+```
 
 3.linux使用crontab来执行定时任务
 ```shell
